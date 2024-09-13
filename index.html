@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postcode Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Enter Postcode</h1>
+      <div class="search-container">
+        <input
+          type="text"
+          id="postcodeInput"
+          placeholder="Enter UK postcode"
+          pattern="[A-Z]{1,2}[0-9R]{1,2} ?[0-9][A-Z]{2}"
+          title="Please enter a valid UK postcode"
+        />
+        <button id="searchButton">SEARCH</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
