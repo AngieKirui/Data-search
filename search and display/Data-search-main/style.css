@@ -1,0 +1,165 @@
+/* Common styles for both pages */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fcf9f9
+  margin : 0px;
+  padding : 0px;
+}
+
+.container {
+  width: 400px;
+  max-width: 1200px;
+  margin: 100px auto;
+  background: #f7f3f3;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Login Page Styles */
+.imgcontainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.login-container {
+  width: 400px;
+  position: relative; /* Changed from absolute to relative */
+  margin: 150px auto; /* Center it and add top margin */
+  text-align: center;
+  padding: 20px 0 0 0;
+  border-radius: 10px;
+  color: #dad2d2;
+  border: 0px solid;
+  background-color: #eeecec;
+}
+
+.login-form input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: #4caf50;
+  color: #f7f1f1;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #45a049;
+}
+
+#loginMessage {
+  color: red;
+  margin-top: 10px;
+}
+/* Dashboard Section Styling */
+.dashboard-section {
+  margin-top: 30px;
+}
+
+.dashboard-section h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* CSV Upload Section */
+#csvFileInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+
+#uploadCsvButton {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#uploadCsvButton:hover {
+  background-color: #218838;
+}
+
+#uploadCsvMessage {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Search Bar Section */
+.search-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+#postcodeInput {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#searchButton {
+  padding: 10px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  background-color: #218838;
+}
+
+#searchMessage {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container,
+  .login-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  #postcodeInput,
+  #csvFileInput {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+  }
+}
